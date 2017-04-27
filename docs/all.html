@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/lightgallery.css" />   
+	<title>My foto gallery</title>
+</head>
+
+<body>
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="js/lg-autoplay.min.js"></script>
+<script src="js/lg-fullscreen.min.js"></script>
+<script src="js/lg-hash.min.js"></script>
+<script src="js/lg-pager.min.js"></script>
+<script src="js/lg-share.min.js"></script>
+<script src="js/lg-thumbnail.min.js"></script>
+<script src="js/lg-video.min.js"></script>
+<script src="js/lg-zoom.min.js"></script>
+
+<table>
+	<tr align="center">
+		<td>
+			<a id="Obch1" href="javascript:void(0)"><img src="sveta_vipusk_sad_2017_obshaja/small/DSC_1.jpg"></a>
+		</td>
+		<td>
+			общая фото
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#Obch1').click(function(e){
+		lightGallery(document.getElementById('Obch1'),{
+            dynamic:true,
+            html:true,
+            mobileSrc:false,
+            dynamicEl:[
+
+  {"src":"sveta_vipusk_sad_2017_obshaja/DSC_1.jpg", "thumb":"sveta_vipusk_sad_2017_obshaja/small/DSC_1.jpg"}
+, {"src":"sveta_vipusk_sad_2017_obshaja/DSC_10.jpg", "thumb":"sveta_vipusk_sad_2017_obshaja/small/DSC_10.jpg"}
+, {"src":"sveta_vipusk_sad_2017_obshaja/DSC_11.jpg", "thumb":"sveta_vipusk_sad_2017_obshaja/small/DSC_11.jpg"}
+, {"src":"sveta_vipusk_sad_2017_obshaja/DSC_2.jpg", "thumb":"sveta_vipusk_sad_2017_obshaja/small/DSC_2.jpg"}
+, {"src":"sveta_vipusk_sad_2017_obshaja/DSC_3.jpg", "thumb":"sveta_vipusk_sad_2017_obshaja/small/DSC_3.jpg"}
+, {"src":"sveta_vipusk_sad_2017_obshaja/DSC_4.jpg", "thumb":"sveta_vipusk_sad_2017_obshaja/small/DSC_4.jpg"}
+, {"src":"sveta_vipusk_sad_2017_obshaja/DSC_5.jpg", "thumb":"sveta_vipusk_sad_2017_obshaja/small/DSC_5.jpg"}
+, {"src":"sveta_vipusk_sad_2017_obshaja/DSC_6.jpg", "thumb":"sveta_vipusk_sad_2017_obshaja/small/DSC_6.jpg"}
+, {"src":"sveta_vipusk_sad_2017_obshaja/DSC_7.jpg", "thumb":"sveta_vipusk_sad_2017_obshaja/small/DSC_7.jpg"}
+, {"src":"sveta_vipusk_sad_2017_obshaja/DSC_8.jpg", "thumb":"sveta_vipusk_sad_2017_obshaja/small/DSC_8.jpg"}
+, {"src":"sveta_vipusk_sad_2017_obshaja/DSC_9.jpg", "thumb":"sveta_vipusk_sad_2017_obshaja/small/DSC_9.jpg"}
+            ]
+        })
+    })
+
+  });
+</script>
+
+
+</body>
+</html>
