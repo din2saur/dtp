@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/lightgallery.css" />   
+	<title>My foto gallery</title>
+</head>
+
+<body>
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="js/lg-autoplay.min.js"></script>
+<script src="js/lg-fullscreen.min.js"></script>
+<script src="js/lg-hash.min.js"></script>
+<script src="js/lg-pager.min.js"></script>
+<script src="js/lg-share.min.js"></script>
+<script src="js/lg-thumbnail.min.js"></script>
+<script src="js/lg-video.min.js"></script>
+<script src="js/lg-zoom.min.js"></script>
+
+<table>
+	<tr align="center">
+		<td>
+			<a id="Obch1" href="javascript:void(0)"><img src="sveta_vipusk_sad_2017_obshaja/small/DSC_1.jpg"></a>
+		</td>
+		<td>
+			общая фото
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#Obch1').click(function(e){
+		lightGallery(document.getElementById('Obch1'),{
+            dynamic:true,
+            html:true,
+            mobileSrc:false,
+            dynamicEl:[
+
+  {"src":"bruno/DSC_0013.JPG", "thumb":"bruno/small/DSC_0013.JPG"}
+, {"src":"bruno/DSC_0018.JPG", "thumb":"bruno/small/DSC_0018.JPG"}
+, {"src":"bruno/DSC_0032.JPG", "thumb":"bruno/small/DSC_0032.JPG"}
+, {"src":"bruno/DSC_0037.JPG", "thumb":"bruno/small/DSC_0037.JPG"}
+, {"src":"bruno/DSC_0048.JPG", "thumb":"bruno/small/DSC_0048.JPG"}
+, {"src":"bruno/small", "thumb":"bruno/small/small"}
+, {"src":"bruno/walk1.jpg", "thumb":"bruno/small/walk1.jpg"}
+, {"src":"bruno/walk2.jpg", "thumb":"bruno/small/walk2.jpg"}
+            ]
+        })
+    })
+
+  });
+</script>
+
+
+</body>
+</html>
